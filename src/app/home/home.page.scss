@@ -7,13 +7,20 @@
 
 ion-searchbar{
   --background: #fe5b00;
-  --color: black;
+  --color: white;
+  margin-bottom: 5vw;
+}
+
+ion-input{
+  --background: grey;
+  width: 30vw;
+  height: 10vw;
 }
 
 h2{
   margin-top:3vw;
   margin-bottom:3vw;
-  justify-self: center;
+  text-align: center;
 }
 
 .separador{
