@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
       icon: 'home-outline'
     },
     {
-      title: 'Favorites',
+      title: 'Favoritas',
       url: '/favorites',
       icon: 'heart'
     }    
