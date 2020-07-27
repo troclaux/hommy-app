@@ -7,6 +7,16 @@
 
 <ion-content>
   <ion-title class="logo">Hommy</ion-title>
+  <h1>Lista de repúblicas</h1>
+
+  <ion-card *ngFor="let dorm of dorms">
+    <ion-card-header>
+      <ion-card-title>{{dorm.city}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>Número de quartos: {{dorm.numberOfRooms}}</ion-card-content>
+  </ion-card>
+  
   <ion-card><img src="./../../assets/images/mobile_background.jpg"></ion-card>
   <h2>Encontre o seu lar</h2>
   <h3>Onde você quer morar?</h3>
@@ -19,8 +29,6 @@
   <h4>Aproveite as inúmeras ofertas e escolha a república ideal para você, sem sair de casa</h4>
   <br>
   
-  <h1>Dados da republica</h1>
-  <h2>{{dorms[0].numberOfRooms}}</h2>
   <h3>Fale conosco</h3>
   <br>
   <ion-label position = stacked>Email:</ion-label>

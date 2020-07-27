@@ -13,19 +13,24 @@ export class HomePage implements OnInit {
 
     this.dorms = [
       {
-        numberOfRooms: 7,
-        city: 'Brasilia',
-        zipCode: '70747123'
+        city: 'Brasília',
+        numberOfRooms: 4,
+        rent: 850 ,
       },
       {
-        numberOfRooms: 4,
-        city: 'Brasilia',
-        zipCode: '70747123'
+        city: 'Rio de Janeiro',
+        numberOfRooms: 5,
+        rent: 900,
       },
       {
+        city: 'São Paulo',
+        numberOfRooms: 3,
+        rent: 800,
+      },
+      {
+        city: 'Belo Horizonte',
         numberOfRooms: 4,
-        city: 'Brasilia',
-        zipCode: '70747123'
+        rent: 750,
       }    
     ]
   }
