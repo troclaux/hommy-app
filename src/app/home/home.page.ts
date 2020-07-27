@@ -6,17 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-
-  constructor() { }
-
-  dadosDoDorm = {
-    number_of_rooms: 3,
-  }
-
+  
+  dorms = [];
 
   ngOnInit() {
+
+    this.dorms = [
+      {
+        numberOfRooms: 7,
+        city: 'Brasilia',
+        zipCode: '70747123'
+      },
+      {
+        numberOfRooms: 4,
+        city: 'Brasilia',
+        zipCode: '70747123'
+      },
+      {
+        numberOfRooms: 4,
+        city: 'Brasilia',
+        zipCode: '70747123'
+      }    
+    ]
   }
 
-  
+  constructor() {}  
 
 }
