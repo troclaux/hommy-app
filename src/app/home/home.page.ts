@@ -9,7 +9,14 @@ export class HomePage implements OnInit {
 
   constructor() { }
 
+  dadosDoDorm = {
+    number_of_rooms: 3,
+  }
+
+
   ngOnInit() {
   }
+
+  
 
 }
