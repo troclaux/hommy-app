@@ -14,11 +14,11 @@ export class CadastroRepublicaPage implements OnInit {
 
     this.registerForm = this.formbuilder.group({
 
-      endereco: [null],
-      aluguel: [null],
-      avaliacao: [null],
-      anuncio: [null],
-      vagasDisponiveis: [null],
+      endereco: [null, [Validators.required], [Validators.maxLength(30)]],
+      aluguel: [null, [Validators.required]],
+      descricao: [null],
+      anuncio: [null, [Validators.required]],
+      vagasDisponiveis: [null, [Validators.required]],
       
     });
     

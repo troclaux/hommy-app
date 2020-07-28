@@ -19,11 +19,11 @@
       </ion-item>
 
       <ion-item>
-        <ion-input placeholder="avaliacao" type="text" formControlName="avaliacao"></ion-input>
+        <ion-input placeholder="descricao" type="text" formControlName="descricao"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-input placeholder="vagasDisponiveis" type="text" formControlName="vagasDisponiveis"></ion-input>
+        <ion-input placeholder="vagasDisponiveis" type="number" formControlName="vagasDisponiveis"></ion-input>
       </ion-item>
 
       <ion-item>
@@ -32,7 +32,7 @@
       
     </ion-list>
 
-    <ion-button type="submit" shape="round">Cadastrar</ion-button>
+    <ion-button type="submit" shape="round" [disabled]="registerForm.invalid">Cadastrar</ion-button>
 
   </form>
 
