@@ -14,11 +14,20 @@ export class CadastroPage implements OnInit {
   constructor(public formbuilder: FormBuilder) {
     this.registerForm = this.formbuilder.group({
       name:[null],
-      password:[null]
+      password:[null],
+      confirmPassword:[null],
+      email:[null],
+      phone:[null],
+      // TODO add type of costumer
     });
    }
 
   ngOnInit() {
+  }
+
+  submitForm(form) {
+    console.log(form);
+    console.log(form.value);
   }
 
 }

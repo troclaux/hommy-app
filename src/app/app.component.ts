@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
       icon: 'heart'
     },
     {
-      title: 'Cadastro',
+      title: 'Cadastro de usuário',
       url: '/cadastro',
       icon: 'heart'
     }    

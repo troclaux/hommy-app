@@ -6,11 +6,33 @@
 
 <ion-content>
   <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+
     <ion-list>
+
       <ion-item>
-        <ion-input placeholder="login" type="text" formControlName="name"></ion-input>
+        <ion-input placeholder="nome completo" type="text" formControlName="name"></ion-input>
       </ion-item>
+      
+      <ion-item>
+        <ion-input placeholder="senha" type="password" formControlName="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="confirmar senha" type="password" formControlName="confirmPassword"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="email" type="text" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="telefone" type="text" formControlName="phone"></ion-input>
+      </ion-item>
+      
     </ion-list>
+
     <ion-button type="submit" shape="round">Cadastrar</ion-button>
+
   </form>
+
 </ion-content>
