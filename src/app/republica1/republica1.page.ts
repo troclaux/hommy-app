@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-republica1',
@@ -9,7 +10,16 @@ export class Republica1Page implements OnInit {
 
   republicas = [];
 
-  constructor() { }
+  constructor(public toastController: ToastController) { }
+
+  async presentToast(){
+    const toast = await this.toastController.create({
+      message: 'República avaliada com sucesso',
+      duration: 2000
+    });
+    toast.present();
+  }
+
 
   ngOnInit() {
     this.republicas = [
