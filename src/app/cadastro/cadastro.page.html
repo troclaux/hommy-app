@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+    <ion-list>
+      <ion-item>
+        <ion-input placeholder="login" type="text" formControlName="name"></ion-input>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
