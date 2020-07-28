@@ -16,7 +16,9 @@
 
     <ion-card-content>Número de quartos: {{dorm.numberOfRooms}}</ion-card-content>
   </ion-card>
-  
+
+  <ion-card *ngFor="let republica of republicas">{{republica.anuncio}}</ion-card>
+
   <ion-card><img src="./../../assets/images/mobile_background.jpg"></ion-card>
   <h2>Encontre o seu lar</h2>
   <h3>Onde você quer morar?</h3>
