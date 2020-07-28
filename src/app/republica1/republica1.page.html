@@ -6,10 +6,36 @@
 
 <ion-content>
 
-  <ion-card *ngFor="let republica of republicas"> 
+  <ion-card *ngFor="let republica of republicas">
+  
     <ion-card-header>
-      <ion-card-title>{{republica.anuncio}}</ion-card-title>
+
+      <ion-card-title>
+        {{republica.anuncio}}
+
+        <ion-chip>
+          <ion-icon name="star-outline"></ion-icon>
+          <br>
+          {{republica.avaliacao}}
+        </ion-chip>
+
+      </ion-card-title>
+
+      <ion-card-subtitle>
+        {{republica.cidade}}, {{republica.endereco}}
+        <br>
+        R${{republica.aluguel}},00/mês
+      </ion-card-subtitle>
+
     </ion-card-header>
+  
+    <ion-card-content>
+      {{republica.descricao}}
+      <br>
+      <br>
+      {{republica.vagasDisponiveis}} vaga(s) disponíveis
+    </ion-card-content>
+  
   </ion-card>
 
 </ion-content>
