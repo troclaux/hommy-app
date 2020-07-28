@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro-republica',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroRepublicaPage implements OnInit {
 
-  constructor() { }
+  registerForm: FormGroup;
+
+  constructor(public formbuilder: FormBuilder) {
+
+    this.registerForm = this.formbuilder.group({
+
+      endereco: [null],
+      aluguel: [null],
+      avaliacao: [null],
+      anuncio: [null],
+      vagasDisponiveis: [null],
+      
+    });
+    
+  }
 
   ngOnInit() {
+  }
+
+  submitForm(form){
+    console.log(form);
+    console.log(form.value);
   }
 
 }

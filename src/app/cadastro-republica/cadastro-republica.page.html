@@ -1,9 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cadastroRepublica</ion-title>
+    <ion-title>Cadastro de república</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <form [formGroup]="registerForm" (ngSubmit)="submitForm(registerForm)">
+
+    <ion-list>
+
+      <ion-item>
+        <ion-input placeholder="endereco" type="text" formControlName="endereco"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="aluguel" type="text" formControlName="aluguel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="avaliacao" type="text" formControlName="avaliacao"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="vagasDisponiveis" type="text" formControlName="vagasDisponiveis"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input placeholder="anuncio" type="text" formControlName="anuncio"></ion-input>
+      </ion-item>
+      
+    </ion-list>
+
+    <ion-button type="submit" shape="round">Cadastrar</ion-button>
+
+  </form>
 
 </ion-content>
