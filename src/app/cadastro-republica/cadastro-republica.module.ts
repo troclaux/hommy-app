@@ -8,14 +8,17 @@ import { CadastroRepublicaPageRoutingModule } from './cadastro-republica-routing
 
 import { CadastroRepublicaPage } from './cadastro-republica.page';
 
+import { BrMaskerModule } from "br-mask";
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    CadastroRepublicaPageRoutingModule
+    CadastroRepublicaPageRoutingModule,
+    BrMaskerModule
   ],
-  declarations: [CadastroRepublicaPage]
+  declarations: [CadastroRepublicaPage],
 })
 export class CadastroRepublicaPageModule {}

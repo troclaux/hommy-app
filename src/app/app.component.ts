@@ -20,22 +20,22 @@ export class AppComponent implements OnInit {
     {
       title: 'Favoritas',
       url: '/favorites',
-      icon: 'heart'
+      icon: ''
     },
     {
       title: 'Repúblicas',
       url: '/republica1',
-      icon: 'heart'
+      icon: ''
     },
     {
       title: 'Cadastro de usuário',
       url: '/cadastro',
-      icon: 'heart'
+      icon: ''
     },
     {
       title: 'Cadastro de república',
       url: '/cadastro-republica',
-      icon: 'heart'
+      icon: ''
     }    
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
