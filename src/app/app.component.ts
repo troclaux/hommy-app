@@ -36,6 +36,11 @@ export class AppComponent implements OnInit {
       title: 'Cadastro de república',
       url: '/cadastro-republica',
       icon: 'heart'
+    },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'heart'
     }    
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
