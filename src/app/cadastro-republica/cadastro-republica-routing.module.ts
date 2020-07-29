@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { CadastroRepublicaPage } from './cadastro-republica.page';
 
+import { BrMaskerModule } from "br-mask";
+
 const routes: Routes = [
   {
     path: '',
@@ -11,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), BrMaskerModule],
   exports: [RouterModule],
 })
 export class CadastroRepublicaPageRoutingModule {}
