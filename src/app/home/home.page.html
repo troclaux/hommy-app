@@ -5,11 +5,13 @@
   
 </ion-header>
 
+<app-dorm-card></app-dorm-card>
 <ion-content>
   <ion-title class="logo">Hommy</ion-title>
   <h1>Lista de repúblicas</h1>
 
   <ion-card *ngFor="let dorm of dorms">
+
     <ion-card-header>
       <ion-card-title>{{dorm.city}}</ion-card-title>
     </ion-card-header>

@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+
+  title: string = "qualquer coisa";
+  subtitle: string = "qualquer coisa";
   
   dorms = [];
-  republicas = [];
   
   ngOnInit() {
 
