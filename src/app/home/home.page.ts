@@ -11,6 +11,11 @@ export class HomePage implements OnInit {
   card_subtitle: string = "qualquer coisa";
   
   dorms = [];
+
+  handleButtonEvent(event: any) {
+    console.log(event);
+  }
+
   
   ngOnInit() {
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dorm-card',
@@ -13,6 +13,13 @@ export class DormCardComponent implements OnInit {
   @Input() title: string;
   @Input() subtitle: string;
 
+  @Output() buttonPressed = new EventEmitter<string>();
+
+  handleButton(): void {
+    this.buttonPressed.emit("wow");
+  }
+
+  
   constructor() { }
 
   ngOnInit() {}
