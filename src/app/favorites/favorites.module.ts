@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { FavoritesPageRoutingModule } from './favorites-routing.module';
 
 import { FavoritesPage } from './favorites.page';
+import { RepublicaComponent } from '../components/republica/republica.component';
+
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { FavoritesPage } from './favorites.page';
     IonicModule,
     FavoritesPageRoutingModule
   ],
-  declarations: [FavoritesPage]
+  declarations: [FavoritesPage, RepublicaComponent]
 })
 export class FavoritesPageModule {}

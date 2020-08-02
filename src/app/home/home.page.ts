@@ -12,7 +12,8 @@ export class HomePage implements OnInit {
   handleButtonEvent(event: any) {
     console.log(event);
   }
-
+  
+  constructor() {}  
   
   ngOnInit() {
 
@@ -40,6 +41,5 @@ export class HomePage implements OnInit {
     ]
   }
 
-  constructor() {}  
 
 }
