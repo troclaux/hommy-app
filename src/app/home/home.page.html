@@ -5,23 +5,25 @@
   
 </ion-header>
 
-<app-dorm-card 
-[title] = "card_title" 
-[subtitle]="card_subtitle"
-(buttonPressed)="handleButtonEvent($event)"></app-dorm-card>
 
 <ion-content>
   <ion-title class="logo">Hommy</ion-title>
   <h1>Lista de repúblicas</h1>
-
-  <ion-card *ngFor="let dorm of dorms">
+  
+  <app-dorm-card *ngFor="let dorm of dorms"
+  [title] = "dorm.city" 
+  [rooms]="dorm.numberOfRooms"
+  (buttonPressed)="handleButtonEvent($event)">
+  </app-dorm-card>
+  
+  <!-- <ion-card *ngFor="let dorm of dorms">
 
     <ion-card-header>
       <ion-card-title>{{dorm.city}}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>Número de quartos: {{dorm.numberOfRooms}}</ion-card-content>
-  </ion-card>
+  </ion-card> -->
 
   <ion-card><img src="./../../assets/images/mobile_background.jpg"></ion-card>
   <h2>Encontre o seu lar</h2>

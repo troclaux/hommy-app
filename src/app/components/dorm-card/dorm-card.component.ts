@@ -11,7 +11,7 @@ export class DormCardComponent implements OnInit {
   subtitle: string = "funciona";
  */
   @Input() title: string;
-  @Input() subtitle: string;
+  @Input() rooms: number;
 
   @Output() buttonPressed = new EventEmitter<string>();
 
