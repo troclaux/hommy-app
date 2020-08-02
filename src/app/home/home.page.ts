@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  title: string = "qualquer coisa";
-  subtitle: string = "qualquer coisa";
+  card_title: string = "qualquer coisa";
+  card_subtitle: string = "qualquer coisa";
   
   dorms = [];
   

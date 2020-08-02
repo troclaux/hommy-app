@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DormCardComponent implements OnInit {
 
-  title: string = "cartao";
+  /* title: string = "cartao";
   subtitle: string = "funciona";
-
-  /* @Input() title: string;
-  @Input() subtitle: string; */
+ */
+  @Input() title: string;
+  @Input() subtitle: string;
 
   constructor() { }
 
