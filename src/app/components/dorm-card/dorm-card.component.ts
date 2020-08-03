@@ -16,6 +16,7 @@ export class DormCardComponent implements OnInit {
   @Output() buttonPressed = new EventEmitter<string>();
 
   handleButton(): void {
+    console.log('evento emitido')
     this.buttonPressed.emit("wow");
   }
 

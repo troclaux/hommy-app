@@ -10,7 +10,8 @@ export class HomePage implements OnInit {
   dorms = [];
 
   handleButtonEvent(event: any) {
-    console.log(event);
+    console.log('evento recebido');
+    alert(event);
   }
   
   constructor() {}  
